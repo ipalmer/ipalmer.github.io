@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 42" role="img" aria-label="Disponible en Google Play" width="150" height="42">
+  <defs>
+    <linearGradient id="gp-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00C3FF"/><stop offset="1" stop-color="#00A0FF"/>
+    </linearGradient>
+    <linearGradient id="gp-green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00E88F"/><stop offset="1" stop-color="#00C853"/>
+    </linearGradient>
+    <linearGradient id="gp-red" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF3A44"/><stop offset="1" stop-color="#C4171E"/>
+    </linearGradient>
+    <linearGradient id="gp-yellow" x1="1" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFD500"/><stop offset="1" stop-color="#FFA000"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="149" height="41" rx="7.5" fill="#000"/>
+  <rect x="0.5" y="0.5" width="149" height="41" rx="7.5" fill="none" stroke="#3a3a3c" stroke-width="1"/>
+  <!-- Google Play triangle (folded 4-color mark) -->
+  <g transform="translate(14,9)">
+    <path d="M0.6 0.5 L12.8 12 L0.6 23.5 C0.2 23.1 0 22.5 0 21.9 V2.1 C0 1.5 0.2 0.9 0.6 0.5Z" fill="url(#gp-blue)"/>
+    <path d="M0.6 0.5 C0.9 0.2 1.4 0.2 2 0.5 L16.6 8.6 L12.8 12 Z" fill="url(#gp-green)"/>
+    <path d="M0.6 23.5 C0.9 23.8 1.4 23.8 2 23.5 L16.6 15.4 L12.8 12 Z" fill="url(#gp-yellow)"/>
+    <path d="M16.6 8.6 L21.2 11.1 C22 11.6 22 12.4 21.2 12.9 L16.6 15.4 L12.8 12 Z" fill="url(#gp-red)"/>
+  </g>
+  <text x="45" y="16.5" fill="#fff" font-family="'Roboto','Helvetica Neue',Arial,sans-serif" font-size="7" letter-spacing="1.1">DISPONIBLE EN</text>
+  <text x="45" y="32" fill="#fff" font-family="'Roboto','Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" letter-spacing="-0.2">Google Play</text>
+</svg>

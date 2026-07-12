@@ -1,9 +1,299 @@
-<html>
-  <head>
-    <title>Página web</title>
-  </head>
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.className = "js";</script>
+
+  <title>Dangerous Goods — App ADR 2025 de mercancías peligrosas, offline</title>
+  <meta name="description" content="Referencia profesional del ADR 2025 para el transporte de mercancías peligrosas por carretera. Base de datos completa de números ONU, fichas de intervención ERIC, códigos Kemler y pictogramas. 100 % offline, en 9 idiomas. iOS y Android.">
+  <meta name="keywords" content="ADR 2025, mercancías peligrosas, dangerous goods, número ONU, ficha ERIC, código Kemler, DGSA, consejero de seguridad, transporte por carretera, app offline">
+  <meta name="author" content="Ivan Palmer">
+  <meta name="theme-color" content="#e8620c" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0b0d" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://ipalmer.github.io/">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dangerous Goods">
+  <meta property="og:title" content="Dangerous Goods — El ADR 2025 completo en tu bolsillo, sin conexión">
+  <meta property="og:description" content="Base de datos ADR 2025 completa, fichas ERIC, códigos Kemler y pictogramas. 100 % offline, en 9 idiomas. Para conductores, consejeros de seguridad y servicios de emergencia.">
+  <meta property="og:url" content="https://ipalmer.github.io/">
+  <meta property="og:image" content="https://ipalmer.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dangerous Goods — ADR 2025 offline">
+  <meta name="twitter:description" content="El ADR 2025 completo en tu bolsillo, sin conexión. Números ONU, fichas ERIC, códigos Kemler y pictogramas en 9 idiomas.">
+  <meta name="twitter:image" content="https://ipalmer.github.io/assets/og-image.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Dangerous Goods",
+    "alternateName": "Mercancías Peligrosas",
+    "applicationCategory": "ReferenceApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "description": "Referencia profesional del ADR 2025 para el transporte de mercancías peligrosas por carretera: números ONU, fichas ERIC, códigos Kemler y pictogramas. 100 % offline, en 9 idiomas.",
+    "author": { "@type": "Person", "name": "Ivan Palmer" }
+  }
+  </script>
+</head>
 <body>
 
-Hello world
+  <div class="stripe" role="presentation"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Dangerous Goods — inicio">
+        <img src="assets/icon.png" alt="" width="34" height="34">
+        <span>Dangerous Goods<small>Mercancías Peligrosas · ADR 2025</small></span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#features">Características</a>
+        <a href="#languages">Idiomas</a>
+        <a href="#screens">Capturas</a>
+        <a class="btn" href="#download">Descargar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="download">
+      <div class="wrap">
+        <div class="hero-copy">
+          <span class="eyebrow rise d1">ADR 2025 · Referencia profesional</span>
+          <h1 class="rise d2">Dangerous Goods</h1>
+          <div class="subname rise d2">Mercancías Peligrosas</div>
+          <p class="tagline rise d3">El ADR 2025 completo en tu bolsillo, <b>sin conexión</b>.</p>
+          <p class="lede rise d4">La referencia de mercancías peligrosas para conductores, consejeros de seguridad (DGSA) y servicios de emergencia. Toda la normativa, siempre disponible, aunque no tengas cobertura.</p>
+          <div class="badges rise d5">
+            <a href="https://apps.apple.com/app/id1323804036" aria-label="Descargar en el App Store">
+              <img src="assets/badge-appstore.svg" alt="Descargar en el App Store" width="140" height="48" loading="lazy">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=es.palmer.dangerousgoods" aria-label="Disponible en Google Play">
+              <img src="assets/badge-googleplay.svg" alt="Disponible en Google Play" width="150" height="48" loading="lazy">
+            </a>
+          </div>
+          <div class="hero-meta rise d6">
+            <span><i class="dot" aria-hidden="true"></i> 100 % offline</span>
+            <span><i class="dot" aria-hidden="true"></i> Gratis, con opción sin anuncios</span>
+            <span><i class="dot" aria-hidden="true"></i> 9 idiomas</span>
+          </div>
+        </div>
+
+        <div class="hero-visual rise d4" aria-hidden="true">
+          <div class="phone">
+            <img src="assets/screenshots/01-home.png" alt="" width="280" height="606" fetchpriority="high">
+          </div>
+          <!-- Placa Kemler (código de peligro / nº ONU) -->
+          <div class="kemler" title="Placa naranja ADR: código de peligro y número ONU">
+            <div class="k-top">33</div>
+            <div class="k-bot">1203</div>
+          </div>
+          <!-- Placa de clase 3 (inflamable) -->
+          <div class="diamond-badge diamond" style="--d:66px; --df: var(--red);">
+            <div style="display:flex; flex-direction:column; align-items:center; line-height:1; color:#fff;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2c3 3.5 5 6 5 9.2 0 3.4-2.2 5.8-5 5.8s-5-2.4-5-5.8c0-1.6.6-2.8 1.7-4.3.4 1.3 1.3 2 2.2 2.2-.9-2.7.2-5.1 1.1-7.1z"/></svg>
+              <span style="font-family:var(--mono); font-weight:700; font-size:15px; margin-top:2px;">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <div class="stripe" role="presentation"></div>
+    <section class="stats" aria-label="El dataset ADR 2025 en cifras">
+      <div class="inner">
+        <div class="stat"><div class="num">2.939</div><div class="lbl">entradas ADR</div></div>
+        <div class="stat"><div class="num">2.347</div><div class="lbl">números ONU</div></div>
+        <div class="stat"><div class="num">236</div><div class="lbl">fichas ERIC</div></div>
+        <div class="stat"><div class="num">110</div><div class="lbl">códigos Kemler</div></div>
+      </div>
+    </section>
+    <div class="stripe" role="presentation"></div>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Todo lo que necesitas en carretera</span>
+          <h2>Una consulta ADR completa, sin depender de la red</h2>
+          <p>Datos oficiales del ADR 2025, organizados para encontrar lo que buscas en segundos: por número ONU, por nombre o por código de peligro.</p>
+        </div>
+        <div class="features">
+
+          <article class="feature reveal">
+            <div class="ic"><span class="diamond" style="--df: var(--orange);"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 1l22 22"/><path d="M16.72 11.06A11 11 0 0 1 19 12.55"/><path d="M5 12.55a11 11 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.58 9"/><path d="M1.42 9a16 16 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><path d="M12 20h.01"/></svg></span></div>
+            <h3>100 % offline</h3>
+            <p>Toda la base de datos vive en el dispositivo. Consulta en túneles, muelles o zonas sin cobertura — nunca se cae.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="ic"><span class="diamond" style="--df: var(--orange);"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg></span></div>
+            <h3>Búsqueda instantánea</h3>
+            <p>Escribe un número ONU o un nombre y filtra al instante entre 2.939 entradas. Filtros por ONU, nombre y peligro.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="ic"><span class="diamond" style="--df: var(--red);"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6"/><path d="M9 16h5"/></svg></span></div>
+            <h3>Fichas de intervención ERIC</h3>
+            <p>236 fichas ERIC con las acciones de primera respuesta: peligros de incendio, derrames y actuación en caso de emergencia.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="ic"><span class="diamond" style="--df: var(--plate-ink);"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span></div>
+            <h3>Códigos de peligro Kemler</h3>
+            <p>Los 110 códigos Kemler de la placa naranja, descifrados: sabes qué significa cada número de peligro de un vistazo.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="ic"><span class="diamond" style="--df: var(--orange);"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg></span></div>
+            <h3>9 idiomas</h3>
+            <p>Interfaz y datos en inglés, español, alemán, francés, italiano, ruso, polaco, neerlandés y rumano.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="ic"><span class="diamond" style="--df: var(--orange);"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.59 13.41 13.42 20.6a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><path d="M7 7h.01"/></svg></span></div>
+            <h3>Gratis</h3>
+            <p>Descárgala sin coste, con anuncios discretos. Una compra opcional los quita para siempre. Sin suscripciones.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LANGUAGES ============ -->
+    <section class="section langs-section" id="languages">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Sin barreras de idioma</span>
+          <h2>Disponible en 9 idiomas</h2>
+          <p>Los mismos datos ADR, en el idioma de cada conductor y de cada equipo de emergencia de Europa.</p>
+        </div>
+        <div class="langs reveal">
+          <span class="lang"><span class="flag">🇪🇸</span> Español <small>ES</small></span>
+          <span class="lang"><span class="flag">🇬🇧</span> English <small>EN</small></span>
+          <span class="lang"><span class="flag">🇩🇪</span> Deutsch <small>DE</small></span>
+          <span class="lang"><span class="flag">🇫🇷</span> Français <small>FR</small></span>
+          <span class="lang"><span class="flag">🇮🇹</span> Italiano <small>IT</small></span>
+          <span class="lang"><span class="flag">🇷🇺</span> Русский <small>RU</small></span>
+          <span class="lang"><span class="flag">🇵🇱</span> Polski <small>PL</small></span>
+          <span class="lang"><span class="flag">🇳🇱</span> Nederlands <small>NL</small></span>
+          <span class="lang"><span class="flag">🇷🇴</span> Română <small>RO</small></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SCREENSHOTS ============ -->
+    <section class="section" id="screens">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">La app por dentro</span>
+          <h2>Diseñada para consultarse con guantes y con prisa</h2>
+          <p>Listas claras, pictogramas reales de cada clase y una jerarquía pensada para encontrar la información crítica de inmediato.</p>
+        </div>
+        <div class="shots">
+          <figure class="shot reveal">
+            <div class="frame"><img src="assets/screenshots/01-home.png" alt="Pantalla de inicio con la lista de mercancías peligrosas y sus pictogramas de clase" width="620" height="1342" loading="lazy"></div>
+            <figcaption class="cap"><b>Explora el catálogo</b>Todas las entradas ADR con su pictograma de clase.</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <div class="frame"><img src="assets/screenshots/02-search.png" alt="Búsqueda de «Gaso» mostrando UN 1203 y UN 3475 con código Kemler 33" width="620" height="1342" loading="lazy"></div>
+            <figcaption class="cap"><b>Busca al instante</b>Por número ONU, nombre o código de peligro.</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <div class="frame"><img src="assets/screenshots/03-eric.png" alt="Ficha de intervención ERIC 3-11, líquido muy inflamable, con acciones de respuesta" width="620" height="1342" loading="lazy"></div>
+            <figcaption class="cap"><b>Fichas ERIC</b>Acciones de primera respuesta paso a paso.</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <div class="frame"><img src="assets/screenshots/04-ai.png" alt="Asistente de IA respondiendo la clase de UN 1203" width="620" height="1342" loading="lazy"></div>
+            <figcaption class="cap"><b>Asistente de IA</b>Pregunta en lenguaje natural.<span class="tag">Solo iOS</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <div class="stripe" role="presentation"></div>
+    <section class="cta">
+      <div class="wrap">
+        <img class="appicon reveal" src="assets/icon.png" alt="Icono de la app Dangerous Goods" width="88" height="88">
+        <h2 class="reveal">Llévate el ADR 2025 en el bolsillo</h2>
+        <p class="reveal">Gratis en iOS y Android. Sin registro, sin conexión, sin excusas para no tener la normativa a mano.</p>
+        <div class="badges reveal">
+          <a href="https://apps.apple.com/app/id1323804036" aria-label="Descargar en el App Store">
+            <img src="assets/badge-appstore.svg" alt="Descargar en el App Store" width="140" height="48" loading="lazy">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=es.palmer.dangerousgoods" aria-label="Disponible en Google Play">
+            <img src="assets/badge-googleplay.svg" alt="Disponible en Google Play" width="150" height="48" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="stripe" role="presentation"></div>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#top">
+            <img src="assets/icon.png" alt="" width="34" height="34">
+            <span>Dangerous Goods</span>
+          </a>
+          <p>Referencia profesional del ADR 2025 para el transporte de mercancías peligrosas por carretera. Offline, en 9 idiomas.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Descargar</h4>
+          <a href="https://apps.apple.com/app/id1323804036">App Store (iOS)</a>
+          <a href="https://play.google.com/store/apps/details?id=es.palmer.dangerousgoods">Google Play (Android)</a>
+        </div>
+        <div class="footer-col">
+          <h4>Enlaces</h4>
+          <a href="#features">Características</a>
+          <a href="#languages">Idiomas</a>
+          <a href="privacy.html">Política de privacidad</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="mailto:ivan.palmergarcia@gmail.com">ivan.palmergarcia@gmail.com</a>
+          <span>Desarrollado por Ivan Palmer</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ivan Palmer · Dangerous Goods</span>
+        <span class="disclaimer">Herramienta de consulta. No sustituye a la normativa ADR oficial ni al criterio de un consejero de seguridad.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Reveal on scroll (mejora progresiva; sin JS el contenido es visible)
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || !els.length) { return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+
 </body>
 </html>
