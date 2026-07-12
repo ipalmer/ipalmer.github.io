@@ -69,7 +69,10 @@ body {
   letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+  /* clip (no hidden): evita el scroll horizontal de los adornos del hero sin
+     convertir el <body> en contenedor de scroll — hidden fuerza overflow-y:auto
+     y en Safari iOS impide llegar al final de la página (footer inaccesible). */
+  overflow-x: clip;
 }
 h1, h2, h3 { line-height: 1.08; letter-spacing: -0.03em; font-weight: 800; margin: 0; }
 p { margin: 0; }
@@ -110,6 +113,8 @@ img, svg { display: block; max-width: 100%; }
 .nav a { font-size: 14.5px; color: var(--ink-soft); font-weight: 500; transition: color .18s; }
 .nav a:hover { color: var(--ink); }
 .nav .btn { padding: 9px 16px; }
+/* el botón primario del nav siempre lleva texto blanco (gana a .nav a) */
+.nav a.btn, .nav a.btn:hover { color: #fff; }
 @media (max-width: 760px) { .nav a:not(.btn) { display: none; } }
 
 /* ---------- buttons ---------- */
@@ -245,8 +250,13 @@ section { scroll-margin-top: 80px; }
 .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
 .shot { text-align: center; }
 .shot .frame {
-  border-radius: 30px; padding: 8px; background: linear-gradient(155deg, #2a2a30, #0d0d10);
-  box-shadow: var(--shadow-md); transition: transform .25s ease;
+  border-radius: 32px; padding: 8px;
+  background: linear-gradient(160deg, #3a3a44, #17171c);
+  box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.10), 0 0 0 1px rgba(0,0,0,.30), 0 16px 38px rgba(0,0,0,.22);
+  transition: transform .25s ease;
+}
+@media (prefers-color-scheme: dark) {
+  .shot .frame { box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.12), 0 0 0 1px rgba(255,255,255,.07), 0 20px 44px rgba(0,0,0,.6); }
 }
 .shot:hover .frame { transform: translateY(-6px); }
 .shot .frame img { width: 100%; border-radius: 23px; display: block; }
