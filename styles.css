@@ -77,7 +77,10 @@ body {
 h1, h2, h3 { line-height: 1.08; letter-spacing: -0.03em; font-weight: 800; margin: 0; }
 p { margin: 0; }
 a { color: inherit; text-decoration: none; }
-img, svg { display: block; max-width: 100%; }
+/* height:auto es imprescindible: los atributos width/height del <img> actúan
+   como presentational hints; sin esto la altura queda clavada al atributo y la
+   imagen se estira cuando el ancho lo fija el CSS (p. ej. las capturas). */
+img, svg { display: block; max-width: 100%; height: auto; }
 :focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 4px; }
 
 .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
